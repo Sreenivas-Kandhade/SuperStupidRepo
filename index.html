@@ -1,16 +1,22 @@
 <html>
 <head>
-<script>
-function add(){
+<script type="text/javascript">
+function add()
+{
+	var li = document.createElement("li");
+	var inputval = document.getElementById("todo");
+	val text = document.createTextNode(inputval);
+	li.appendChild(text);
+	document.getElementById("todos").appendChild(li);
 	
 }
 </script>
 </head>
 <body>
-<h1>To Do</h1>
-<form>
-	<input type ="text" id="todo"/>
-	<button onclick="add()">Add</button>
-</form>
+<h1>tOdO aPp</h1>
+<input type ="text" id="todo"/>
+<button onclick="add()">Ad(h)d</button>
+<ul id="todos">
+</ul>
 </body>
 </html>
